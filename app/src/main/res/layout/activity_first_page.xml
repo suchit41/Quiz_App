@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".First_page">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="321dp"
+        android:layout_height="271dp"
+        android:contentDescription="@string/javaimage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.218"
+        app:srcCompat="@drawable/java" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="318dp"
+        android:layout_height="36dp"
+        android:text="@string/welcome_to_java_quiz"
+        android:textColor="#000666"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="318dp"
+        android:layout_height="36dp"
+        android:text="@string/welcome"
+        android:textColor="#E11010"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="376dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Q1_in_an_instance_method_or_a_constructor_this_is_a_reference_to_the_current_object"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <Button
+        android:id="@+id/True"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Question"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <Button
+        android:id="@+id/False"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toEndOf="@+id/True"
+        app:layout_constraintTop_toBottomOf="@+id/Question"
+        app:layout_constraintVertical_bias="0.322" />
+</androidx.constraintlayout.widget.ConstraintLayout>
